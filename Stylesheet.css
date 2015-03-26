@@ -1,0 +1,50 @@
+graph {
+	fill-mode: gradient-vertical;
+	fill-color: gray, white, white, white, white, gray;
+	padding: 100px;
+}
+
+edge {
+	shape: freeplane;
+	size: 2px;
+	fill-color: #444;
+	text-alignment: under;
+	text-color: white;
+	text-style: bold;
+	text-background-mode: rounded-box;
+	text-background-color: #222C;
+	text-padding: 5px, 4px;
+	text-offset: 0px, 5px;
+	text-alignment: under;
+	text-offset: 0px, 0px;
+}
+
+node {
+	text-alignment: under;
+	text-color: white;
+	text-style: bold;
+	text-background-mode: rounded-box;
+	text-background-color: #222C;
+	text-padding: 5px, 4px;
+	text-offset: 0px, 5px;
+}
+
+node.OpenVSwitch {
+	size: 50px;
+	fill-mode: image-scaled;
+	fill-image: url('Switch.png');
+	text-alignment: under;
+	text-offset: 0px, 0px;
+}
+
+node.EndHost {
+	size: 50px;
+	fill-mode: image-scaled;
+	fill-image: url('Host.png');
+	text-alignment: under;
+	text-offset: 0px, 0px;
+}
+
+node:clicked {
+	text-background-color: #B82E00;
+}
